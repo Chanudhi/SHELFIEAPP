@@ -5,8 +5,8 @@ import logo from '../assets/img/logo.jpg'
 const Home = () => {
   return (
     <View style={styles.container}>
-        <Image source={logo} />
-      <Text style={styles.title}>The Number 1</Text>
+        <Image source={logo} style={styles.img}/>
+      <Text style={[styles.title,{color:'purple'}] }>The Number 1</Text>
       <Text style={{marginTop: 10,marginBottom:30}}>Reading list App</Text>
     <View style={styles.card}> 
         <Text>This is a card</Text>
@@ -33,5 +33,11 @@ const styles = StyleSheet.create({
         padding: 16,
         backgroundColor: 'white',
         borderRadius: 8,
+    },
+    img:{
+        width: 200,
+        height: 200,
+        margin: 16,
+        borderRadius: 8
     }
 })
